@@ -1,3 +1,5 @@
-pagedown::chrome_print("docs/index.html")
-pdftools::pdf_subset(input = "docs/index.pdf", pages =  c(1,2))
-fs::file_copy(path = "docs/index_output.pdf", new_path = "docs/index.pdf", overwrite = TRUE)
+pagedown::chrome_print("index.html")
+pdftools::pdf_subset(input = "index.pdf", pages =  c(1,2,3))
+fs::file_copy(path = "index_output.pdf", new_path = "index.pdf", overwrite = TRUE)
+
+
