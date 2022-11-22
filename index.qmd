@@ -182,7 +182,7 @@ create_section(cv, "publications")
 
 <p class="footer">
 
-Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Acknowledgement for codes available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+Resume made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Acknowledgement for codes available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 </p>
 
