@@ -16,7 +16,7 @@ knitr:
 #| include: false
 #| cache: false
 googlesheets4::gs4_deauth()
-cv_url <- "https://docs.google.com/spreadsheets/d/1iBxpNzwZWOrOwR__Y4FNDQ_3tpw-0trS0PVigsS4z6w/edit?usp=sharing"
+cv_url <- "https://docs.google.com/spreadsheets/d/1CBVoZB-KrsoQyBe1xEEDdMF2ESj8IoaKrdzPdv3oFMs/edit#gid=917338460"
 cv <- googlesheets4::read_sheet(cv_url)
 ```
 
@@ -30,7 +30,7 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Contact
 
-<center><span style="font-size: 1.5em;"> <a href='https://beamilz.com' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/beatrizmilz' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:milz.bea@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/BeaMilz' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://discourse.curso-r.com/u/beatrizmilz/summary' target='_blank'><i class="fab fa-discourse"></i></a></center>
+<left><span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left> 
 
 </span>
 
@@ -68,7 +68,14 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Programming skills
 
-<i class="fab fa-r-project"></i> `R` <br> <i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> <i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> <i class="fas fa-code-branch"></i> `Git` <br> <i class="fab fa-github"></i> `GitHub` <br> <i class="fab fa-markdown"></i> `Markdown` <br> <i class="fab fa-html5"></i> `HTML` <br> <i class="fab fa-css3-alt"></i> `CSS` <br>
+<i class="fab fa-r-project"></i> R <br> 
+<i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> 
+<i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> 
+<i class="fas fa-code-branch"></i> `Git` <br> 
+<i class="fab fa-github"></i> `GitHub` <br> 
+<i class="fab fa-markdown"></i> `Markdown` <br> 
+<i class="fab fa-html5"></i> `HTML` <br> 
+<i class="fab fa-css3-alt"></i> `CSS` <br>
 :::
 
 ::: {.column width="5%"}
@@ -97,7 +104,7 @@ create_section <- function(cv_data, section_name){
     dplyr::mutate(in_resume = as.character(in_resume),
                   end = tidyr::replace_na(end, 9999),
                   loc = dplyr::if_else(loc == "Online", NA_character_, loc)) |>
-    dplyr::filter(in_resume %in% c("TRUE", "VERDADEIRO"), section == section_name) |>
+    dplyr::filter(in_resume %in% c("TRUE"), section == section_name) |>
     dplyr::select(section:description_1) |>
     dplyr::arrange(desc(end), desc(start)) |>
     dplyr::mutate(
@@ -126,30 +133,42 @@ create_section <- function(cv_data, section_name){
 
 <!-- Main content -->
 
-# Beatriz Milz
+# Jennifer Hsuan-Yu Lin
 
-## <i class="fa-solid fa-suitcase"></i> Work
+## <i class="fa-solid fa-diagram-project"></i> Data analytics projects
 
 ```{r}
-create_section(cv, "working_experience")
+create_section(cv, "data_analytics_projects")
 ```
 
-## <i class="fa-solid fa-person-chalkboard"></i> Selected teaching experience
+## <i class="fa-solid fa-certificate"></i> Certification
 
 ```{r}
-create_section(cv, "teaching_experience")
+create_section(cv, "certification")
 ```
 
-## <i class="fa-solid fa-chalkboard-user"></i> Selected talks / workshops
+## <i class="fa-solid fa-handshake-angle"></i> Volunteering work
 
 ```{r}
-create_section(cv, "oral_communications")
+create_section(cv, "volunteering")
+```
+
+## <i class="fa-solid fa-briefcase"></i>  Work experience
+
+```{r}
+create_section(cv, "experience")
 ```
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
 ```{r}
 create_section(cv, "education")
+```
+
+## <i class="fa-solid fa-book"></i> Publications
+
+```{r}
+create_section(cv, "publications")
 ```
 :::
 :::
@@ -158,7 +177,7 @@ create_section(cv, "education")
 
 <p class="footer">
 
-Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available on <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+Resume made with 💜 and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Acknowledgement for codes available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 </p>
 
