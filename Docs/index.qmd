@@ -30,7 +30,7 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Contact
 
-<left><span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left> 
+<left><span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left>
 
 </span>
 
@@ -68,19 +68,7 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Programming skills
 
-<i class="fa-brands fa-python"></i> Python <br>
-<i class="fa-solid fa-table-cells"></i> Pandas <br>
-<i class="fa-solid fa-chart-column"></i> Matplotlib <br>
-<i class="fab fa-r-project"></i> R <br> 
-<i class="fa-solid fa-chart-line"></i> tidyverse <br> 
-<i class="fab fa-markdown"></i> RMarkdown / Quarto <br> 
-<i class="fa-solid fa-database"></i> SQL <br>
-<i class="fa-solid fa-table-columns"></i> Tableau <br>
-<i class="fas fa-code-branch"></i> Git <br> 
-<i class="fab fa-github"></i> GitHub <br> 
-<!-- <i class="fab fa-markdown"></i> `Markdown` <br>  -->
-<!-- <i class="fab fa-html5"></i> `HTML` <br>  -->
-<!-- <i class="fab fa-css3-alt"></i> `CSS` <br> -->
+<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> <!-- <i class="fab fa-markdown"></i> `Markdown` <br>  --> <!-- <i class="fab fa-html5"></i> `HTML` <br>  --> <!-- <i class="fab fa-css3-alt"></i> `CSS` <br> -->
 :::
 
 ::: {.column width="5%"}
@@ -158,7 +146,7 @@ create_section(cv, "certification")
 create_section(cv, "volunteering")
 ```
 
-## <i class="fa-solid fa-briefcase"></i>  Work experience
+## <i class="fa-solid fa-briefcase"></i> Work experience
 
 ```{r}
 create_section(cv, "experience")
