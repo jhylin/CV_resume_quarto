@@ -126,7 +126,7 @@ create_section <- function(cv_data, section_name){
 
 <!-- Main content -->
 
-# Jennifer Hsuan-Yu Lin
+# Jennifer HY Lin
 
 ## <i class="fa-solid fa-diagram-project"></i> Data analytics projects
 
