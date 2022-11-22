@@ -1,1 +1,3 @@
 # CV_resume_quarto
+
+This repository uses the .qmd file and other associated files from [Bea Milz's resume repository](https://github.com/beatrizmilz/resume) to create resume or CV by using Quarto. Huge acknowledgement and thanks also goes to [Nick Strayer's package](https://github.com/nstrayer/cv). Both repositories are extremely useful for keeping up-to-date with our CVs and resumes. Please acknowledge these repositories if using the CV/resume template .qmd file.
