@@ -68,14 +68,19 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Programming skills
 
+<i class="fa-brands fa-python"></i> Python <br>
+<i class="fa-solid fa-table-cells"></i> Pandas <br>
+<i class="fa-solid fa-chart-column"></i> Matplotlib <br>
 <i class="fab fa-r-project"></i> R <br> 
-<i class="fa fa-area-chart" aria-hidden="true"></i> `tidyverse` <br> 
-<i class="fab fa-markdown"></i> `RMarkdown / Quarto` <br> 
-<i class="fas fa-code-branch"></i> `Git` <br> 
-<i class="fab fa-github"></i> `GitHub` <br> 
-<i class="fab fa-markdown"></i> `Markdown` <br> 
-<i class="fab fa-html5"></i> `HTML` <br> 
-<i class="fab fa-css3-alt"></i> `CSS` <br>
+<i class="fa-solid fa-chart-line"></i> tidyverse <br> 
+<i class="fab fa-markdown"></i> RMarkdown / Quarto <br> 
+<i class="fa-solid fa-database"></i> SQL <br>
+<i class="fa-solid fa-table-columns"></i> Tableau <br>
+<i class="fas fa-code-branch"></i> Git <br> 
+<i class="fab fa-github"></i> GitHub <br> 
+<!-- <i class="fab fa-markdown"></i> `Markdown` <br>  -->
+<!-- <i class="fab fa-html5"></i> `HTML` <br>  -->
+<!-- <i class="fab fa-css3-alt"></i> `CSS` <br> -->
 :::
 
 ::: {.column width="5%"}
