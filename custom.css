@@ -36,12 +36,13 @@ b, strong {
 }
 
 p, .gt_table, .gt_row{
-  color: #626262;
+  color: #444444;
   font-size: 0.850rem;
 }
 
 .footer{
-  font-size: 0.70rem !important;
+  font-size: 0.80rem !important;
+  margin: 40px;
 }
 
 main{
