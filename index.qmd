@@ -2,6 +2,7 @@
 title: ""
 format: 
   html:
+    page-layout: custom
     theme: journal
     css: custom.css
 editor: visual
@@ -22,15 +23,25 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 <!-- Sidebar -->
 
-::: columns
-::: {.column .aside width="25%"}
+<!-- Work out code for margin space!! -->
+
+::: {.grid}
+
+::: {.g-col-4}
+
+<!-- ::: {.column-margin} -->
+<!-- ::: columns -->
+
+<!-- ::: {.column .aside width="25%"} -->
 <!-- <center><a href='https://beamilz.com' target='_blank'> ![](https://avatars.githubusercontent.com/u/42153618?v=4){width="80%" style="border-radius: 50%;"}</center> -->
 
-</a>
+<!-- </a> -->
+
+<br>
 
 ### Contact
 
-<left><span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'><i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left>
+<span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'> <i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left>
 
 </span>
 
@@ -66,15 +77,20 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 <!-- <i class="fas fa-box-open"></i> [Package {mananciais}](https://beatrizmilz.github.io/mananciais/) - Author, maintainer. -->
 
+<br>
+
 ### Programming skills
 
-<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> <!-- <i class="fab fa-markdown"></i> `Markdown` <br>  --> <!-- <i class="fab fa-html5"></i> `HTML` <br>  --> <!-- <i class="fab fa-css3-alt"></i> `CSS` <br> -->
+<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table"></i> Polars <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fa-solid fa-computer"></i> scikit-learn <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> <!-- <i class="fab fa-markdown"></i> `Markdown` <br>  --> <!-- <i class="fab fa-html5"></i> `HTML` <br>  --> <!-- <i class="fab fa-css3-alt"></i> `CSS` <br> -->
 :::
 
-::: {.column width="5%"}
-:::
 
-::: {.column width="70%"}
+
+<!-- ::: {.column width="5%"} -->
+<!-- ::: -->
+
+<!-- ::: {.column width="70%"} -->
+::: {.g-col-8}
 <!-- Functions -->
 
 ```{r}
@@ -125,7 +141,6 @@ create_section <- function(cv_data, section_name){
 ```
 
 <!-- Main content -->
-
 # Jennifer HY Lin
 
 ## <i class="fa-solid fa-diagram-project"></i> Data analytics projects
@@ -158,19 +173,21 @@ create_section(cv, "experience")
 create_section(cv, "education")
 ```
 
-## <i class="fa-solid fa-book"></i> Publications
+<!-- ## <i class="fa-solid fa-book"></i> Publications -->
 
 ```{r}
 create_section(cv, "publications")
 ```
 :::
+
+
 :::
 
 <!-- footer -->
 
 <p class="footer">
 
-Resume made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Acknowledgement for codes available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+CV made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Acknowledgement for codes from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 
 </p>
 
