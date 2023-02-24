@@ -42,7 +42,7 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 ### Programming skills
 
-<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table"></i> Polars <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-square-poll-vertical"></i> Plotly <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fa-solid fa-computer"></i> scikit-learn <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> 
+<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table"></i> Polars <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-computer"></i> scikit-learn <br> <i class="fa-solid fa-square-poll-vertical"></i> Plotly <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> 
 
 :::
 
@@ -104,16 +104,16 @@ create_section <- function(cv_data, section_name){
 
 # Jennifer HY Lin
 
-## <i class="fa-solid fa-diagram-project"></i> Data analytics projects
+## <i class="fa-solid fa-diagram-project"></i> Data analytics & machine learning projects
 
 ```{r}
 create_section(cv, "data_analytics_projects")
 ```
 
-## <i class="fa-solid fa-certificate"></i> Certification
+## <i class="fa-solid fa-briefcase"></i> Work experience
 
 ```{r}
-create_section(cv, "certification")
+create_section(cv, "experience")
 ```
 
 ## <i class="fa-solid fa-handshake-angle"></i> Volunteering work
@@ -122,10 +122,10 @@ create_section(cv, "certification")
 create_section(cv, "volunteering")
 ```
 
-## <i class="fa-solid fa-briefcase"></i> Work experience
+## <i class="fa-solid fa-certificate"></i> Certification
 
 ```{r}
-create_section(cv, "experience")
+create_section(cv, "certification")
 ```
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
@@ -148,7 +148,7 @@ create_section(cv, "publications")
 
 <footer>
 <p class = "footer">
-CV made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jhylin/CV_resume_quarto/blob/main/index.qmd) with original source code from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+Resume made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jhylin/CV_resume_quarto/blob/main/index.qmd) with original source code from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
 </p>
 </footer>
 
