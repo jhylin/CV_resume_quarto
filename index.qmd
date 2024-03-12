@@ -25,30 +25,53 @@ cv <- googlesheets4::read_sheet(cv_url)
 
 <!-- Please refer to Page Layout section in Quarto docs (specifically the part on CSS Grid) - https://quarto.org/docs/output-formats/page-layout.html#custom - to customise column positions -->
 
-::: {.grid}
-
+::: grid
 ::: {.g-col-3 .g-start-2}
-
+<br>
 <br>
 
 ### Contact
 
-<span style="font-size: 1.5em;"> <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'> <i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left>
-</span>
+[ <a href='https://jhylin.github.io/Data_in_life_blog/' target='_blank'> <i class="fa fa-home"></i></a> <a href='https://github.com/jhylin' target='_blank'><i class="fa-brands fa-github"></i></a> <a href='mailto:jennyhylin@gmail.com'><i class="fa fa-envelope"></i></a> <a href='https://twitter.com/jenhylin' target='_blank'><i class="fa-brands fa-twitter"></i></a> <a href='https://www.linkedin.com/in/jennifer-hy-lin-a9b86981/' target='_blank'><i class="fa-brands fa-linkedin"></i></a></left> ]{style="font-size: 1.5em;"}
 
 <!-- Uncomment and add contents in the column on the left if needed -->
 
 <br>
+<br>
+
+### Research skills
+
+<i></i> • Molecular modeling <br> <i></i> • Structured-based drug design <br> <i></i> • Homology model building <br> <i></i> • Homology model validation <br> <i></i> • High throughput virtual screening <br> <i></i> • Schrödinger (Maestro, Glide) <br> <i></i> • Protein-ligand docking analysis <br> <i></i> • Ligand-based drug design <br> <i></i> • Pharmacophore screening <br> <i></i> • Organic chemical synthesis <br> <i></i> • Compound characterisations <br>
+
+<br>
+<br>
 
 ### Programming skills
 
-<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table"></i> Polars <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-computer"></i> scikit-learn <br> <i class="fa-solid fa-square-poll-vertical"></i> Plotly <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br> 
+<i class="fa-brands fa-python"></i> Python <br> <i class="fa-solid fa-table"></i> Polars <br> <i class="fa-solid fa-table-cells"></i> Pandas <br> <i class="fa-solid fa-arrow-down-wide-short"></i> NumPy <br> <i class="fa-solid fa-computer"></i> scikit-learn <br> <i class="fa-solid fa-square-poll-vertical"></i> Plotly <br> <i class="fa-solid fa-chart-column"></i> Matplotlib <br> <i class="fab fa-r-project"></i> R <br> <i class="fa-solid fa-chart-line"></i> tidyverse <br> <i class="fab fa-markdown"></i> RMarkdown / Quarto <br> <i class="fas fa-code-branch"></i> Git <br> <i class="fab fa-github"></i> GitHub <br>
+
+<!-- <i class="fa-solid fa-database"></i> SQL <br> <i class="fa-solid fa-table-columns"></i> Tableau <br> -->
+
+<br>
+<br>
+
+### Certification
+• Data Science Professional Certificate (in Python)
+- authorised by IBM and verified by Coursera (from 9-11-2021 to 1-28-2022)
+
+<br>
+<br>
+
+### Volunteering work
+• Rotating curator for @RLadiesGlobal community 
+- @WeAreRLadies on Twitter from 10-24-2022 to 10-29-2022 via invitation by rotating curator team
+
 
 :::
 
 <!-- Column for main content -->
-::: {.g-col-6 .g-start-5}
 
+::: {.g-col-6 .g-start-5}
 <!-- Functions -->
 
 ```{r}
@@ -104,10 +127,10 @@ create_section <- function(cv_data, section_name){
 
 # Jennifer HY Lin
 
-## <i class="fa-solid fa-diagram-project"></i> Data analytics & machine learning projects
+## <i class="fa-solid fa-diagram-project"></i> Cheminformatics projects
 
 ```{r}
-create_section(cv, "data_analytics_projects")
+create_section(cv, "projects")
 ```
 
 ## <i class="fa-solid fa-briefcase"></i> Work experience
@@ -116,17 +139,17 @@ create_section(cv, "data_analytics_projects")
 create_section(cv, "experience")
 ```
 
-## <i class="fa-solid fa-handshake-angle"></i> Volunteering work
+<!-- ## <i class="fa-solid fa-handshake-angle"></i> Volunteering work -->
 
-```{r}
-create_section(cv, "volunteering")
-```
+<!-- ```{r} -->
+<!-- create_section(cv, "volunteering") -->
+<!-- ``` -->
 
-## <i class="fa-solid fa-certificate"></i> Certification
+<!-- ## <i class="fa-solid fa-certificate"></i> Certification -->
 
-```{r}
-create_section(cv, "certification")
-```
+<!-- ```{r} -->
+<!-- create_section(cv, "certification") -->
+<!-- ``` -->
 
 ## <i class="fa-solid fa-graduation-cap"></i> Education
 
@@ -140,16 +163,18 @@ create_section(cv, "education")
 create_section(cv, "publications")
 ```
 :::
-
-
 :::
 
 <!-- footer -->
 
 <footer>
-<p class = "footer">
+
+<p class="footer">
+
 Resume made with ❤️ and [Quarto](https://quarto.org/). Last updated on `r format.Date(Sys.Date(), "%b %d, %Y")`. <br> Code available from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/jhylin/CV_resume_quarto/blob/main/index.qmd) with original source code from <i class="fa-brands fa-github"></i> [GitHub](https://github.com/beatrizmilz/resume/blob/master/docs/index.qmd). <br>License: [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/).
+
 </p>
+
 </footer>
 
 ```{=html}
