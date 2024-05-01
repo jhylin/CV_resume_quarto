@@ -39,6 +39,13 @@ cv <- googlesheets4::read_sheet(cv_url)
 <br>
 <br>
 
+### Open-source contributions
+[practical_cheminformatics_tutorials](https://github.com/PatWalters/practical_cheminformatics_tutorials/issues/12)
+[chembl_downloader](https://github.com/cthoyt/chembl-downloader/pull/13)
+
+<br>
+<br>
+
 ### Research skills
 
 <i></i> • Molecular modeling <br> <i></i> • Structured-based drug design <br> <i></i> • Homology model building <br> <i></i> • Homology model validation <br> <i></i> • High throughput virtual screening <br> <i></i> • Schrödinger (Maestro, Glide) <br> <i></i> • Protein-ligand docking analysis <br> <i></i> • Ligand-based drug design <br> <i></i> • Pharmacophore screening <br> <i></i> • Organic chemical synthesis <br> <i></i> • Compound characterisations <br>
